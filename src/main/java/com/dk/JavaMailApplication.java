@@ -10,7 +10,7 @@ import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
  * @author: Mr.XYH
  * @create: 2020-12-08 17:54
  **/
-@SpringBootApplication(exclude = {DataSourceAutoConfiguration.class})
+@SpringBootApplication
 public class JavaMailApplication {
     public static void main(String[] args) {
         SpringApplication.run(JavaMailApplication.class,args);

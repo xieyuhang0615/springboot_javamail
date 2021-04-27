@@ -1,0 +1,7 @@
+server:
+  port: 8181
+logging:
+  level:
+    com:
+      dongdongshop: debug
+  config: classpath:log/logback-dev.xml

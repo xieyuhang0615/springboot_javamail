@@ -16,18 +16,15 @@ import java.util.Properties;
  * @Package: com.dk.utils
  * @ClassName: SendJavaMailUtils
  * @Description: java类作用描述
- * @Author: 张凯
- * @CreateDate: 2019-11-29 09:32
- * @UpdateUser: 更新者
- * @UpdateDate: 2019-11-29 09:32
- * @UpdateRemark: 更新说明
- * @Version: 1.0
+ * @Author: Mr.XYH
+ * @create: 2020-12-08 17:40
  */
 @Component
 public class SendComplexJavaMailUtils {
 
-    public static String send = "499165324@qq.com"; //发件人邮箱地址
-    public static String authorization = "eynzmciwrxoebjhd"; //授权码
+    public static String send = "x18502538230@163.com"; //发件人邮箱地址
+//    public static String authorization = "dghtlsohufpvcaai"; //QQ授权码
+    public static String authorization = "LQXZXZDAPAVRWESH"; //授权码
     public static String addresser = "谢雨杭";//发件人名称
     public static String title; //标题
     public static String content; //正文
@@ -54,7 +51,8 @@ public class SendComplexJavaMailUtils {
         //邮箱协议有三种:smtp,POP3,IMAP   这里我们使用的是smtp
         props.setProperty("mail.transport.protocol", "smtp");
         //因为我们使用QQ邮箱来发邮件,所有要使用QQ的smtp邮箱协议地址
-        props.setProperty("mail.smtp.host", "smtp.qq.com");
+//        props.setProperty("mail.smtp.host", "smtp.qq.com");
+        props.setProperty("mail.smtp.host", "smtp.163.com");
         //QQ邮箱的协议服务器端口号
         props.setProperty("mail.smtp.port", "465");
         //如果配置163邮箱的话,以上配置就可以了,但如果是QQ的话,需要多配置一个SSL安全认证
